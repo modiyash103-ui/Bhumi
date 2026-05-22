@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Bhumi ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#140b0b,#2a1010,#3a1616);
+color:white;
+overflow-x:hidden;
+}
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+.container{max-width:1200px;margin:auto}
+h1{
+font-family:'Great Vibes',cursive;
+font-size:5rem;
+color:#ffb6c1;
+}
+.subtitle{
+margin-top:20px;
+font-size:1.2rem;
+line-height:1.8;
+color:#f7dede;
+max-width:800px;
+margin-inline:auto;
+}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:60px 20px;
+}
+.card{
+background:rgba(255,255,255,0.06);
+padding:10px;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+transition:0.4s;
+}
+.card:hover{transform:translateY(-8px)}
+.card img{
+width:100%;
+height:360px;
+object-fit:cover;
+border-radius:20px;
+}
+.message{
+max-width:900px;
+margin:40px auto 80px;
+padding:40px;
+background:rgba(255,255,255,0.06);
+border-radius:30px;
+line-height:2;
+font-size:1.1rem;
+text-align:center;
+}
+.message h2{
+font-family:'Great Vibes',cursive;
+font-size:4rem;
+margin-bottom:20px;
+color:#ffc0cb;
+}
+.footer{
+text-align:center;
+padding:30px;
+color:#f5cccc;
+}
+button{
+padding:14px 28px;
+border:none;
+border-radius:50px;
+background:#ff7da2;
+color:white;
+font-size:1rem;
+margin-top:25px;
+cursor:pointer;
+}
+@media(max-width:768px){
+h1{font-size:3.5rem}
+.message h2{font-size:3rem}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="container">
+<h1>Happy Birthday Bhumi ❤️</h1>
+
+<p class="subtitle">
+To the most beautiful soul who unknowingly became the best part of my life.
+Thank you for every smile, every moment, every little thing.
+Today is all about celebrating YOU.
+</p>
+
+<button onclick="toggleMusic()">🎵 Play Music</button>
+</div>
+</section>
+
+<section class="gallery">
+<div class="card"><img src="photo1.jpg"></div>
+<div class="card"><img src="photo2.jpg"></div>
+<div class="card"><img src="photo3.jpg"></div>
+<div class="card"><img src="photo4.jpg"></div>
+</section>
+
+<section class="message">
+<h2>For You ❤️</h2>
+
+<p>
+Happy Birthday Bhumi ❤️<br><br>
+
+I genuinely don’t think you realise how special you are to me.
+Life feels softer, calmer, and happier with you in it.
+Thank you for being my comfort person, my happiness,
+and one of the most beautiful chapters of my life.<br><br>
+
+Every conversation with you,
+every smile of yours,
+every memory we made together means more to me than I can explain.<br><br>
+
+I just want to thank you for existing,
+for staying,
+and for making my world brighter without even trying.<br><br>
+
+On your birthday,
+I hope you get every bit of happiness,
+peace,
+success,
+and love that you deserve.<br><br>
+
+No matter what happens,
+you’ll always be someone incredibly precious to me.<br><br>
+
+Stay the same beautiful, kind-hearted girl I adore.<br><br>
+
+And yeah…
+thank you for being in my life, Bhumi.
+It truly means everything to me. ❤️
+</p>
+</section>
+
+<div class="footer">
+Made with endless love for Bhumi 🌷<br>
+Forever yours ❤️
+</div>
+
+<audio id="bgMusic" loop>
+<source src="made-in-japan.mp4" type="audio/mp4">
+</audio>
+
+<script>
+const music = document.getElementById('bgMusic');
+let playing = false;
+
+function toggleMusic(){
+if(playing){
+music.pause();
+playing=false;
+}else{
+music.play();
+playing=true;
+}
+}
+</script>
+
+</body>
+</html>
